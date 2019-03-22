@@ -1,5 +1,5 @@
-FROM microsoft/dotnet:latest
-MAINTAINER Promact Infotech<info@promactinfo.com>
+FROM mcr.microsoft.com/dotnet/core/sdk:latest
+
 # Install required packages
 RUN apt-get update -q \
     && DEBIAN_FRONTEND=noninteractive apt-get install -yq --no-install-recommends \
